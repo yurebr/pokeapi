@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  height: 55px;
+  height: 65px;
   padding: 15px 30px;
   background-color: crimson;
   
@@ -20,7 +20,7 @@ header {
   display:flex;
   justify-content: center;
   align-items: center;
-  height: calc(25vh - 55px);
+  height: calc(25vh - 65px);
   /*
   border: 1px solid rgb(153, 6, 6);
   border-radius: 15px; (arredondar)
@@ -48,15 +48,32 @@ header {
 }
 
 
-/* visor {
+#visor {
   background-color: aliceblue;
-  border: 7px solid #ccc
-  width:300px;
-  height:200px;
-  margin: 15px auto;
-} */
+  border: 7px solid #ccc;
+  width: 800px;
+  height: 600px;
+  margin: 15px auto
+} 
 
 #btnbuscar {
   background-color: transparent;
   border: none;
+}
+
+p {
+  text-align: center;
+  color: aliceblue;
+  text-decoration: underline;
+
+}
+
+#titulo {
+  color: aliceblue;
+}
+
+.container-nome {
+  text-align: center;
+  font-family: "Jacquarda Bastarda 9", serif;
+  font-weight: bold;
 }
