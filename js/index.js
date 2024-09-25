@@ -21,14 +21,14 @@ document.addEventListener("DOMContentLoaded", function (){
 
                 const divNome = document.createElement("div");
                 divNome.classList.add("container-nome");
-                divNome.innerHTML = `<h1>   ${data.name}</h1>`;
+                divNome.innerHTML = `<h1 class="nome-pokemon">   ${data.name}</h1>`;
                 visor.appendChild(divNome);
 
                 const divImg = document.createElement("div");
                 divImg.classList.add("container-imagem");
                 divImg.innerHTML = `
-                        <img src=    "${data.sprites.other.showdown.front_default}">
-                    <img src=    "${data.sprites.other.showdown.front_shiny}">`;
+                        <img class= "img" src="${data.sprites.other.dream_world.front_default}">`;
+                    // <img src=    "${data.sprites.other.showdown.front_shiny}">`;
                 visor.appendChild(divImg);
 
                 const divAltura = document.createElement("div");

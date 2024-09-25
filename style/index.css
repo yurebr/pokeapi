@@ -73,7 +73,45 @@ p {
 }
 
 .container-nome {
-  text-align: center;
-  font-family: "Jacquarda Bastarda 9", serif;
+  text-align: center; 
+  font-family: "Silkscreen", sans-serif;
   font-weight: bold;
+
 }
+
+.container-base_stat {
+  text-align: right; 
+  font-family: "Silkscreen", sans-serif;
+  font-weight: bold;
+  margin-top: -100px;
+
+}
+
+.nome-pokemon {
+  text-align: start;
+}
+
+.container-imagem {
+  width: 15vw;
+  height: 30vh;
+
+}
+
+.img {
+  width: 15vw;
+  height: 30vh;
+  object-position: center;
+  object-fit: cover;
+  border: 1px dashed black;
+}
+
+.container-altura {
+  width: 15vw;
+
+}
+
+.container-peso {
+  width: 15vw;
+
+}
+
