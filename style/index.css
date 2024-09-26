@@ -6,13 +6,16 @@ body {
   padding: 0;
   background-image: url("./../imagens/pokedex.png");
   background-size: cover;
+  font-family: "Silkscreen", sans-serif;
 }
 
 header {
   height: 65px;
   padding: 15px 30px;
   background-color: crimson;
-  
+  font-family: "Silkscreen", sans-serif;
+  font-weight: bold;
+  color: #fff;
 }
 
 #divBusca{
@@ -35,6 +38,8 @@ header {
   width:260px;
   align-items: center;
   justify-content: center;
+  font-family: "Silkscreen", sans-serif;
+  font-weight: bold;
 }
 
 #busca{
@@ -45,73 +50,120 @@ header {
   padding: 5px;
   display: flex;
   align-items: center;
+  font-family: "Silkscreen", sans-serif;
+  font-weight: bold;
 }
 
 
-#visor {
+#pai {
+  border-top: 5px solid black;
   background-color: aliceblue;
   border: 7px solid #ccc;
   width: 800px;
-  height: 600px;
-  margin: 15px auto
+  height: 650px;
+  margin: 15px auto;
+  border: 1px solid #000;
+  display: flex;
+
 } 
+
+#esquerdo {
+
+  border-left: 5px solid black;
+  text-align: center;
+  width: 50%;
+  background-color: #ccc;
+
+}
+
+#direita {
+  background-color: #ccc;
+  align-items: center;
+  padding-top: 10vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  display: grid;
+  align-items: center;
+}
+
+
+#todo {
+  display: none;
+  }
+    #todo.mostrar {
+      display:block;
+
+    }
+
+#nome {
+  background-color: crimson;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center; 
+  font-family: "Silkscreen", sans-serif;
+  font-weight: bold;
+}
+
 
 #btnbuscar {
   background-color: transparent;
   border: none;
+  font-family: "Silkscreen", sans-serif;
+  font-weight: bold;
 }
 
 p {
   text-align: center;
   color: aliceblue;
   text-decoration: underline;
-
-}
-
-#titulo {
-  color: aliceblue;
-}
-
-.container-nome {
-  text-align: center; 
   font-family: "Silkscreen", sans-serif;
   font-weight: bold;
 
 }
+
+h3 {
+  text-align: center;
+
+}
+
+.titulo {
+  color: aliceblue;
+  font-family: "Silkscreen", sans-serif;
+  font-weight: bold;
+}
+
 
 .container-base_stat {
-  text-align: right; 
+  align-items: center;
   font-family: "Silkscreen", sans-serif;
-  font-weight: bold;
-  margin-top: -100px;
-
 }
 
-.nome-pokemon {
-  text-align: start;
-}
 
 .container-imagem {
-  width: 15vw;
+  width: 100%;
   height: 30vh;
-
+  display: flex;
+  justify-content: center;
+  border: 5px solid  crimson; 
 }
 
 .img {
-  width: 15vw;
+  width: 100%;
+  height: 30vh;
+  object-position: center;
+  
+
+} 
+
+#imagem {
+  width: 100%;
   height: 30vh;
   object-position: center;
   object-fit: cover;
-  border: 1px dashed black;
-}
-
-.container-altura {
-  width: 15vw;
 
 }
-
-.container-peso {
-  width: 15vw;
-
-}
-

@@ -15,37 +15,53 @@ document.addEventListener("DOMContentLoaded", function (){
                 return response.json();
             })
             .then(data =>{
+
+                const todo = document.getElementById("todo");
+                todo.classList.add("mostrar");
+
                 console.log(data);
-                const visor = document.getElementById("visor");
-                visor.innerHTML = "";
+                const nome = document.getElementById("nome");
+                nome.innerHTML = "";
+
+                console.log(data);
+                const imagem = document.getElementById("imagem");
+                imagem.innerHTML = "";
+
+                console.log(data);
+                const peso = document.getElementById("peso");
+                peso.innerHTML = "";
+
+                console.log(data);
+                const stats = document.getElementById("stats");
+                stats.innerHTML = "";
 
                 const divNome = document.createElement("div");
                 divNome.classList.add("container-nome");
                 divNome.innerHTML = `<h1 class="nome-pokemon">   ${data.name}</h1>`;
-                visor.appendChild(divNome);
+                nome.appendChild(divNome);
 
                 const divImg = document.createElement("div");
                 divImg.classList.add("container-imagem");
                 divImg.innerHTML = `
                         <img class= "img" src="${data.sprites.other.dream_world.front_default}">`;
                     // <img src=    "${data.sprites.other.showdown.front_shiny}">`;
-                visor.appendChild(divImg);
+                imagem.appendChild(divImg);
 
                 const divAltura = document.createElement("div");
                 divAltura.classList.add("container-altura");
                 divAltura.innerHTML = `<h2>Altura: ${data.height/10} m</h2>`;
-                visor.appendChild(divAltura);
+                peso.appendChild(divAltura);
 
                 const divPeso = document.createElement("div");
                 divPeso.classList.add("container-peso");
                 divPeso.innerHTML = `<h2>peso: ${data.weight/10} kg</h2>`;
-                visor.appendChild(divPeso);
+                peso.appendChild(divPeso);
 
                 data.stats.forEach(statusAtual => {
                         const divBase_stat = document.createElement("div");
                         divBase_stat.classList.add("container-base_stat");
                         divBase_stat.innerHTML = `<h3> ${statusAtual.stat.name}: ${statusAtual.base_stat}</h3>`;
-                        visor.appendChild(divBase_stat);
+                        stats.appendChild(divBase_stat);
 
                         
                 });
